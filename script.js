@@ -1,18 +1,15 @@
+var relativeEl = document.querySelector('.text');
+relativeEl.style.transform = 'rotateZ(-10deg)';
+
+
 var animation = anime({
     targets: '.text',
     duration: 1000,
-    color: "rgb(35,7,77)",
-    keyframes: [
-        {color: "rgb(35,7,77)"},
-        {color: "#cc5333"},
-        {color: "#FFF"}
-    ],
-    translateX: 400,
-    skewX:45,
-    rotateZ: 80,
-    scaleX: 10,
-    scaleY: 10,
-    easing: 'easeInQuad',
+    skewX:-35,
+    rotateZ: 15,
+    scaleX: .8,
+    scaleY: 1,
+    easing: 'linear',
     autoplay: false,
     direction: 'alternate'
 })
@@ -23,6 +20,6 @@ var scrollPos;
 
 $(window).scroll(function(){
     var scrollPos = $(document).scrollTop();
-    animation.seek(animation.duration * (scrollPos / 500));
+    animation.seek(animation.duration * (scrollPos / 600));
 
 });

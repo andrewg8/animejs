@@ -1,14 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 h1  {
+    margin-top: 45vh;
     font-size: 72px;
-    vertical-align: middle;
-    text-align: center;
-    top: 50%;
-    right: 50%;
-    position: fixed;
 }
 
 .container {
@@ -21,4 +19,5 @@ h1  {
     bottom: 0;
     left: 0;
     right: 0;
+    text-align: center;
 }
